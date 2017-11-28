@@ -45,6 +45,8 @@ class FrontendAppConfig @Inject() (override val configuration: Configuration) ex
 
   lazy val ninoRegex = loadConfig("microservice.services.validation.nino-regex")
 
+  lazy val telephoneRegex = loadConfig("microservice.services.validation.telephone-regex")
+
   def languageMap: Map[String, Lang] = Map(
     "english" -> Lang("en"),
     "cymraeg" -> Lang("cy"))
